@@ -5,7 +5,12 @@ function oppendToDisplay(input) {
 }
 
 function calculate() {
-  display.value = eval(display.value);
+    try{
+        display.value = eval(display.value);
+    }
+    catch(error){
+        display.value = "Error";
+    }
 }
 
 function clearDisplay() {
