@@ -47,9 +47,12 @@ body {
   
   button:hover {
     background-color: hsl(0, 26%, 43%);
+    transform: scale(1.1);
   }
   button:active {
     background-color: hsl(0, 17%, 43%);
+    transform: scale(0.9);
+
   }
   .operator-btn {
     background-color:hsl(35, 100%, 55%);

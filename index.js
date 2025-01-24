@@ -1,6 +1,5 @@
 const display = document.getElementById("display");
 
-
 function oppendToDisplay(input) {
   display.value += input;
 }
