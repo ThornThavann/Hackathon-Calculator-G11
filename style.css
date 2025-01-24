@@ -4,7 +4,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: rgb(193, 222, 250);
+    /* background-color: rgb(193, 222, 250); */
     background-image: url("https://blog.hanyuchineseschool.com/wp-content/uploads/2021/02/Feliz-ano-nuevo-chino.jpg");
   }
   #calculator {
@@ -86,6 +86,8 @@ body {
   }
   
   @media (max-width: 480px) {
+
+    
     .calculator {
         width: 100%;
         padding: 10px;
