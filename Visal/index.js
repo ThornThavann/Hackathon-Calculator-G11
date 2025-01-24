@@ -18,12 +18,7 @@ function calculate(){
     }
 }
 
-function squareRoot(number) {
-    if (number < 0) {
-        return "Error: Negative number";  // Handle negative input
-    }
-    return Math.sqrt(number);  // Return the square root of the number
-}
+
 
 
 
