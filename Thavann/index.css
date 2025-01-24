@@ -5,10 +5,11 @@ body {
   align-items: center;
   height: 100vh;
   background-color: rgb(193, 222, 250);
+  background-image: url("https://blog.hanyuchineseschool.com/wp-content/uploads/2021/02/Feliz-ano-nuevo-chino.jpg");
 }
 #calculator {
   font-family: Arial, Helvetica, sans-serif;
-  background-color: hsl(0, 0%, 10%);
+  background-color: hsl(0, 85%, 30%);
   border-radius: 15px;
   max-width: 500px;
   overflow: hidden;
@@ -19,7 +20,7 @@ body {
   font-size: 3rem;
   text-align: left;
   border: none;
-  background-color: hsl(0, 0%, 20%);
+  background-color: hsl(0, 88%, 55%);
   color: white;
 }
 #keys {
@@ -45,10 +46,10 @@ button {
 }
 
 button:hover {
-  background-color: hsl(0, 0%, 40%);
+  background-color: hsl(0, 26%, 43%);
 }
 button:active {
-  background-color: hsl(0, 0%, 50%);
+  background-color: hsl(0, 17%, 43%);
 }
 .operator-btn {
   background-color:hsl(35, 100%, 55%);
