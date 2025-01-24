@@ -3,7 +3,6 @@ const display = document.getElementById("display");
 function oppendToDisplay(input) {
   display.value += input;
 }
-// console.log(calculate(4+4));
 
 function calculate() {
   display.value = eval(display.value);
