@@ -11,6 +11,6 @@ function calculate() {
 function Back() {
   display.value = display.value.slice(0, -1);
 }
-function divide(input) {
+function Percentage(input) {
   display.value /= input;
 }
