@@ -23,10 +23,10 @@ body {
 }
 
 .calculator {
-    background-color: rgba(28 27 85 / 80%);
+    background-color: rgba(28, 27, 85, 0.8);
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(245, 241, 241, 0.1);
+    box-shadow: 0 0 30px rgba(0, 255, 255, 0.7), 0 0 60px rgba(0, 255, 255, 0.7);
     width: 300px;
     backdrop-filter: blur(10px);
     animation: slideIn 0.5s ease-in-out;
