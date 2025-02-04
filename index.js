@@ -92,12 +92,26 @@
 // }
 
 // console.log(getDayName(1));
+
+// Style 1 of writing a function isEven
+
 // function isEven(num) {
 //     return num % 2 === 0;
 // }
 
-// console.log(isEven(4)); 
-// console.log(isEven(7)); 
+// console.log(isEven(4)); is true
+// console.log(isEven(7)); is false
+
+// Style 2 of writing a function isEven
+function isEven(num) {
+    if (num % 2 === 0) {
+        return true;
+    } else {
+        return false;
+    }
+}
+console.log(isEven(4)); // true
+console.log(isEven(7)); // false
 
 // console.log(dayName)6; // Wednesday
 
@@ -154,12 +168,13 @@
 // console.log(a || b);
 
 // That is called ES6 function syntax it is a shorthand way of writing a function.
-const oRfunction = (a, b) => {
-if(a=="ruler" || b=="pen"){
-    return "ok";
-} else {
-    return "not ok";
-}
-}
-console.log(oRfunction("ruler", "pen"));
+// const oRfunction = (a, b) => {
+// if(a=="ruler" || b=="pen"){
+//     return "ok";
+// } else {
+//     return "not ok";
+// }
+// }
+// console.log(oRfunction("ruler", "pen"));
+
 
