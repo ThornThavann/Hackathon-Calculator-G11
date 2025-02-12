@@ -103,15 +103,15 @@
 // console.log(isEven(7)); is false
 
 // Style 2 of writing a function isEven
-function isEven(num) {
-    if (num % 2 === 0) {
-        return true;
-    } else {
-        return false;
-    }
-}
-console.log(isEven(4)); // true
-console.log(isEven(7)); // false
+// function isEven(num) {
+//     if (num % 2 === 0) {
+//         return true;
+//     } else {
+//         return false;
+//     }
+// }
+// console.log(isEven(4)); // true
+// console.log(isEven(7)); // false
 
 // console.log(dayName)6; // Wednesday
 
@@ -178,3 +178,107 @@ console.log(isEven(7)); // false
 // console.log(oRfunction("ruler", "pen"));
 
 
+// function calculateSquareRoot(number) {
+//     if (number < 0) {
+//         return 'Invalid number';
+//     }
+//     return Math.sqrt(number);
+// }
+
+// console.log(calculateSquareRoot(9));  // 3
+// console.log(calculateSquareRoot(16)); // 4
+// console.log(calculateSquareRoot(-1)); // Invalid number
+
+// function getDayName(dayNumber) {
+//     let dayName;
+//     switch (dayNumber) {
+//         case 1:
+//             dayName = "Monday";
+//             break;
+//         case 2:
+//             dayName = "Tuesday";
+//             break;
+//         case 3:
+//             dayName = "Wednesday";
+//             break;
+//         case 4:
+//             dayName = "Thursday";
+//             break;
+//         case 5:
+//             dayName = "Friday";
+//             break;
+//         case 6:
+//             dayName = "Saturday";
+//             break;
+//         case 7:
+//             dayName = "Sunday";
+//             break;
+//         default:
+//             dayName = "Invalid day number";
+//     }
+//     return dayName;
+// }
+
+// console.log(getDayName(1)); // Monday
+// console.log(getDayName(5)); // Friday
+// console.log(getDayName(8)); // Invalid day number
+
+// Array in javascript
+// const fruits = ["apple","banana","baba","jojo",55]
+// console.log(fruits[4])
+     
+
+// let person = {
+//     name: "meng",
+//     age: 14,
+//     city: "New York"
+// }
+// console.log(person.age)
+
+// const students1 = [
+//     {
+//         name: "jonh", age: 12
+//     },
+//     {
+//         name: "meng", age: 20
+//     },
+//     {
+//         name: "lyka", age: 30
+//     },
+// ];
+
+// students1.unshift({ name: "jeje", age:45 });
+
+// const students2 = [
+//     { name: "kaka", age: 23 },
+//     { name: "koks", age: 34 },
+//     { name: "kewd", age: 54 }
+// ];
+// students2.unshift({ name: "jiju", age: 23 });
+// console.log(students1);
+
+// const students3 = [
+//     { id: 2, name: "kaka", age: 23, role: "gang" },
+//     { id: 3, name: "koks", age: 34, role: "dans" },
+//     { id: 5, name: "kewd", age: 54, role: "manager" }
+// ];
+
+// const result = students3.find((res) => res.name === "koks");
+// console.log(result);
+
+// console.log({ students3 });
+
+
+// let x = "12";
+// if (x== 12) {
+//     console.log("A")
+// }else{
+//     console.log("B")
+// }
+
+let x = "12";
+if (x=== 12) {
+    console.log("A")
+}else{
+    console.log("B")
+}
