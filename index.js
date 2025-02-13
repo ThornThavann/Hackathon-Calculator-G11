@@ -276,9 +276,14 @@
 //     console.log("B")
 // }
 
-let x = "12";
-if (x=== 12) {
-    console.log("A")
-}else{
-    console.log("B")
+// let x = "12";
+// if (x=== 12) {
+//     console.log("A")
+// }else{
+//     console.log("B")
+// }
+
+let fruits = ["apple","banana","pear","orange","amngo"];
+for (let i = 0; i < fruits.length; i++) {
+    console.log(fruits[i])
 }
