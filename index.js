@@ -189,44 +189,61 @@
 // console.log(calculateSquareRoot(16)); // 4
 // console.log(calculateSquareRoot(-1)); // Invalid number
 
-// function getDayName(dayNumber) {
-//     let dayName;
-//     switch (dayNumber) {
-//         case 1:
-//             dayName = "Monday";
-//             break;
-//         case 2:
-//             dayName = "Tuesday";
-//             break;
-//         case 3:
-//             dayName = "Wednesday";
-//             break;
-//         case 4:
-//             dayName = "Thursday";
-//             break;
-//         case 5:
-//             dayName = "Friday";
-//             break;
-//         case 6:
-//             dayName = "Saturday";
-//             break;
-//         case 7:
-//             dayName = "Sunday";
-//             break;
-//         default:
-//             dayName = "Invalid day number";
-//     }
-//     return dayName;
-// }
+//Excercise 8
+function getDayName(dayNumber) {
+    let dayName;
+    switch (dayNumber) {
+        case 1:
+            dayName = "Monday";
+            break;
+        case 2:
+            dayName = "Tuesday";
+            break;
+        case 3:
+            dayName = "Wednesday";
+            break;
+        case 4:
+            dayName = "Thursday";
+            break;
+        case 5:
+            dayName = "Friday";
+            break;
+        case 6:
+            dayName = "Saturday";
+            break;
+        case 7:
+            dayName = "Sunday";
+            break;
+        default:
+            dayName = "Invalid day number";
+    }
+    return dayName;
+}
 
-// console.log(getDayName(1)); // Monday
-// console.log(getDayName(5)); // Friday
-// console.log(getDayName(8)); // Invalid day number
+console.log(getDayName(1)); // Monday
+console.log(getDayName(5)); // Friday
+console.log(getDayName(8)); // Invalid day number
 
 // Array in javascript
 // const fruits = ["apple","banana","baba","jojo",55]
 // console.log(fruits[4])
+
+
+//Excercise 14
+const products = [
+    { name: "Laptop", price: 100, stock: 5 },
+    { name: "I Phone", price: 50, stock: 10 },
+    { name: "Nokia", price: 30, stock: 7 }
+];
+
+console.log(products);
      
+
+let obj ={
+    name : "Alice"
+    age : 12,
+}
+console.log(obj.name, obj[age]); 
 
 // let person = {
 //     name: "meng",
@@ -246,6 +263,9 @@
 //         name: "lyka", age: 30
 //     },
 // ];
+
+console.log(obj.name, obj[age]); 
+
 
 // students1.unshift({ name: "jeje", age:45 });
 
@@ -283,7 +303,88 @@
 //     console.log("B")
 // }
 
-let fruits = ["apple","banana","pear","orange","amngo"];
-for (let i = 0; i < fruits.length; i++) {
-    console.log(fruits[i])
-}
+// let fruits = ["apple","banana","pear","orange","amngo"];
+// for (let i = 0; i < fruits.length; i++) {
+//     console.log(fruits[i])
+// }
+
+
+//Exercise 6
+// function convertValues() {
+//     let num1 = Number("10") * 5;
+//     let num2 = Number(true) + 2;
+
+//     console.log(num1); // 50
+//     console.log(num2); // 3
+// }
+
+// convertValues();
+
+//Excercise 12
+let numbers = [10, 20, 30];
+
+// Add a number at the end
+numbers.push(40);
+console.log(numbers); // [10, 20, 30, 40]
+
+// Remove the last number
+numbers.pop();
+console.log(numbers); // [10, 20, 30]
+
+// Find the length of the array
+let length = numbers.length;
+console.log(length); // 3
+
+
+// function checkNumber(num) {
+//     if (num >= 10 && num <= 50 && num % 2 === 0) {
+//         return true;
+//     } else {
+//         return false;
+//     }
+// }
+
+// console.log(checkNumber(20)); // true
+// console.log(checkNumber(55)); // false
+// console.log(checkNumber(15)); // false
+// console.log(checkNumber(30)); // true
+
+// function getDayOfWeek(dayNumber) {
+//     let dayName;
+//     switch (dayNumber) {
+//         case 1:
+//             dayName = "Monday";
+//             break;
+//         case 2:
+//             dayName = "Tuesday";
+//             break;
+//         case 3:
+//             dayName = "Wednesday";
+//             break;
+//         case 4:
+//             dayName = "Thursday";
+//             break;
+//         case 5:
+//             dayName = "Friday";
+//             break;
+//         case 6:
+//             dayName = "Saturday";
+//             break;
+//         case 7:
+//             dayName = "Sunday";
+//             break;
+//         default:
+//             dayName = "Invalid day number";
+//     }
+//     return dayName;
+// }
+
+// console.log(getDayOfWeek(1)); // Monday
+// console.log(getDayOfWeek(4)); // Thursday
+// console.log(getDayOfWeek(7)); // Sunday
+// console.log(getDayOfWeek(8)); // Invalid day number
+
+let obj = { name: "John", age: 25 };
+
+console.log(obj["name"]);
+
