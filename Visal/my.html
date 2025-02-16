@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Navbar</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-white text-gray-900">
+    <!-- Navbar -->
+    <nav
+      class="bg-pink-300 p-4 flex justify-between items-center w-full h-[80px]"
+    >
+      <img class="w-[150px] h-[80px]" src="../asset/footerimg.png" alt="Logo" />
+
+      <!-- Hamburger Button -->
+      <button
+        id="menu-button"
+        class="md:hidden text-white text-3xl"
+      >
+        ☰
+      </button>
+
+      <!-- Mobile Menu -->
+      <ul
+        id="menu"
+        class="hidden flex-col absolute top-[80px] left-0 w-full bg-pink-300 text-white text-lg font-bold text-end md:flex md:flex-row md:space-x-8 md:static md:w-auto md:bg-transparent"
+      >
+        <li><a href="#" class="hover:text-gray-700 block p-3">Home</a></li>
+        <li><a href="#" class="hover:text-gray-700 block p-3">About</a></li>
+        <li><a href="#" class="hover:text-gray-700 block p-3">Gallery</a></li>
+        <li><a href="#" class="hover:text-gray-700 block p-3">Shop</a></li>
+        <li><a href="#" class="hover:text-gray-700 block p-3">Blog</a></li>
+        <li><a href="#" class="hover:text-gray-700 block p-3">FAQ</a></li>
+        <li>
+          <a
+            href="#"
+            class="px-4 py-2 bg-yellow-500 text-white font-bold rounded-xl shadow-md hover:text-black block m-3"
+          >
+            CONTACT
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="relative">
+      <div
+        class="bg-[url(../asset/Banner1.png)] w-full h-screen bg-no-repeat bg-cover"
+      ></div>
+      <div
+        class="absolute inset-0 flex justify-center items-center bg-black bg-opacity-30"
+      >
+        <h1 class="text-white text-4xl font-bold">The Power of Nature</h1>
+      </div>
+      <script>
+        document.getElementById("menu-button").addEventListener("click", function() {
+          document.getElementById("menu").classList.toggle("hidden");
+        });
+      </script>
+    </header>
+  </body>
+</html>
