@@ -1,22 +1,16 @@
 const display = document.getElementById("display");
 
+
 function oppendToDisplay(input) {
   display.value += input;
 }
-
-function calculate() {
-    try{
-        display.value = eval(display.value);
-    }
-    catch(error){
-        display.value = "Error";
-    }
-}
-
+// console.log(calculate(4+4));
 function clearDisplay() {
-    display.value = "";
-  }
-  
+  display.value = "";
+}
+function calculate() {
+  display.value = eval(display.value);
+}
 function Back() {
   display.value = display.value.slice(0, -1);
 }
