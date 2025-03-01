@@ -308,6 +308,37 @@ console.log(obj.name, obj[age]);
 //     { id: 5, name: "kewd", age: 54, role: "manager" }
 // ];
 
+let myTeam = [
+    {
+        personal: {
+            name: "kaka",
+            age: 21,
+            id: "2121-2",
+            class: "WMAD"
+        },
+        favorite: {
+            color: "red",
+            food: "rice",
+            sport: "football"
+        }
+    },
+    {
+        personal: {
+            name: "visal",
+            age: 21,
+            id: "21453-2",
+            class: "WMAD"
+        },
+        favorite: {
+            color: "blue",
+            food: "noodle",
+            sport: "football"
+        }
+    }
+];
+
+console.log(myTeam);
+
 // const result = students3.find((res) => res.name === "koks");
 // console.log(result);
 
@@ -549,3 +580,15 @@ const products = [
 ];
 
 console.log(products);
+
+students.forEach(student => {
+    if (student.grade === "A") {
+        console.log(`${student.name}, excellent work! Keep it up!`);
+    } else if (student.grade === "B") {
+        console.log(`${student.name}, good job! You can reach the top!`);
+    } else if (student.grade === "C") {
+        console.log(`${student.name}, you are doing okay, but there's room for improvement.`);
+    } else {
+        console.log(`${student.name}, let's work together to improve your grade.`);
+    }
+});
