@@ -11,15 +11,14 @@
     <nav
       class="bg-pink-300 p-4 flex justify-between items-center w-full h-[80px]"
     >
-      <img class="w-[150px] h-[80px]" src="../asset/footerimg.png" alt="Logo" />
+      <img
+        class="w-[150px] h-[80px]"
+        src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/fafdda9b-515e-4ffc-8019-51ba87fe00a4/derv1ir-c88e69e2-fdfc-4764-8bdf-e5a28f4e4943.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2ZhZmRkYTliLTUxNWUtNGZmYy04MDE5LTUxYmE4N2ZlMDBhNFwvZGVydjFpci1jODhlNjllMi1mZGZjLTQ3NjQtOGJkZi1lNWEyOGY0ZTQ5NDMuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.JCSzZKmMTAAGGYBwhOCRaC0owee91uO4dogdW_y7tKU"
+        alt="Logo"
+      />
 
       <!-- Hamburger Button -->
-      <button
-        id="menu-button"
-        class="md:hidden text-white text-3xl"
-      >
-        ☰
-      </button>
+      <button id="menu-button" class="md:hidden text-white text-3xl">☰</button>
 
       <!-- Mobile Menu -->
       <ul
@@ -54,9 +53,11 @@
         <h1 class="text-white text-4xl font-bold">The Power of Nature</h1>
       </div>
       <script>
-        document.getElementById("menu-button").addEventListener("click", function() {
-          document.getElementById("menu").classList.toggle("hidden");
-        });
+        document
+          .getElementById("menu-button")
+          .addEventListener("click", function () {
+            document.getElementById("menu").classList.toggle("hidden");
+          });
       </script>
     </header>
   </body>
