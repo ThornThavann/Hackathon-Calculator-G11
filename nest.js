@@ -52,44 +52,95 @@
   
 //   console.log("New student added:", student);
 
-  const students = [
-    { name: "Then", age: 21, grade: "B" },
-    { name: "Keo", age: 23, grade: "A" },
-    { name: "Sue", age: 24, grade: "C" },
-    { name: "Sal", age: 20, grade: "B" },
-    { name: "Da", age: 26, grade: "G" }
-  ];
+//   const students = [
+//     { name: "Then", age: 21, grade: "B" },
+//     { name: "Keo", age: 23, grade: "A" },
+//     { name: "Sue", age: 24, grade: "C" },
+//     { name: "Sal", age: 20, grade: "B" },
+//     { name: "Da", age: 26, grade: "G" }
+//   ];
   
-//   console.log("Class list:", students);
+// //   console.log("Class list:", students);
 
-const student1 = students[0];  // Take the first student but if you want to take the second student, you can change to students[1] to take the second student[1].
-console.log(student1);
+// const student1 = students[0];  // Take the first student but if you want to take the second student, you can change to students[1] to take the second student[1].
+// console.log(student1);
 
-// This is to check each student grade and give feedback.
-if (student1.grade === "A") {
-  console.log(student1.name + ": Amazing! Keep it up!");
-} else if (student1.grade === "B") {
-  console.log(student1.name + ": Good job! You can reach A!");
-} else if (student1.grade === "C") {
-  console.log(student1.name + ": Not bad! Try to improve!");
-} else if (student1.grade === "D") {
-  console.log(student1.name + ": You need to study harder!");
-} else {
-  console.log(student1.name + ": Oh no! Let's review together!");
+// // This is to check each student grade and give feedback.
+// if (student1.grade === "A") {
+//   console.log(student1.name + ": Amazing! Keep it up!");
+// } else if (student1.grade === "B") {
+//   console.log(student1.name + ": Good job! You can reach A!");
+// } else if (student1.grade === "C") {
+//   console.log(student1.name + ": Not bad! Try to improve!");
+// } else if (student1.grade === "D") {
+//   console.log(student1.name + ": You need to study harder!");
+// } else {
+//   console.log(student1.name + ": Oh no! Let's review together!");
+// }
+
+// // This is to check all students grade and give feedback.
+// for (let i = 0; i < students.length; i++) {
+//     if (students[i].grade === "A") {
+//       console.log(students[i].name + " 🏆 Star Student! Amazing work!");
+//     } else if (students[i].grade === "B") {
+//       console.log(students[i].name + ": Good job! Keep improving!");
+//     } else if (students[i].grade === "C") {
+//       console.log(students[i].name + ": Not bad! Try to improve!");
+//     } else if (students[i].grade === "D") {
+//       console.log(students[i].name + ": You need to study harder!");
+//     } else {
+//       console.log(students[i].name + ": Oh no! Let's review together!");
+//     }
+// //   }
+// let a = "  $";
+// console.log(a);
+
+// let b = " $$$";
+// console.log(b);
+
+// let c = "$$$$$";
+// console.log(c);
+
+
+// const n = 10; // You can change this value to adjust the number of rows
+
+// for (let i = 1; i <= n; i++) {
+//   let str = "* ";
+//   console.log(" ".repeat(n - i) + str.repeat(i));
+// }
+
+// let d = "*";
+// let star = d;
+// let space = " ";
+// for (let i = 0; i < 3; i++) {
+//   console.log(space.repeat(3 - i) + star);
+//   star = star + "**";
+// }
+// console.log(space + star);
+
+for (let i = 1; i <= 10; i++) {
+  console.log(i);
 }
 
-// This is to check all students grade and give feedback.
-for (let i = 0; i < students.length; i++) {
-    if (students[i].grade === "A") {
-      console.log(students[i].name + " 🏆 Star Student! Amazing work!");
-    } else if (students[i].grade === "B") {
-      console.log(students[i].name + ": Good job! Keep improving!");
-    } else if (students[i].grade === "C") {
-      console.log(students[i].name + ": Not bad! Try to improve!");
-    } else if (students[i].grade === "D") {
-      console.log(students[i].name + ": You need to study harder!");
-    } else {
-      console.log(students[i].name + ": Oh no! Let's review together!");
-    }
-  }
-  
+for (let i = 5; i <= 20; i++) {
+  console.log(i);
+}
+
+// 2. Sum number from 1 to 5
+let sum = 0;
+for (let i = 1; i <= 5; i++) {
+  sum += i;
+}
+console.log(sum);
+
+// 3. Print number from 5 to 1
+for (let i = 5; i >= 1; i--) {
+  console.log(i);
+}
+
+
+let fruits = ["Apple", "Banana", "Cherry", "Meng", "Then", "Visal", "Keo", "Sue", "Sal", "Da"];
+for (let i = 0; i < fruits.length; i++) {
+  console.log(fruits[i]);
+}
+
