@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Card Flip Animations</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .card-flip {
+            transform-style: preserve-3d;
+            transition: transform 0.6s;
+            cursor: pointer;
+        }
+        .card-flip.flip {
+            transform: rotateY(180deg);
+        }
+        .card-front, .card-back {
+            backface-visibility: hidden;
+        }
+        .card-back {
+            transform: rotateY(180deg);
+        }
+    </style>
+</head>
+<body class="bg-gray-100 min-h-screen flex items-center justify-center p-4">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl">
+        <!-- Card 1 -->
+        <div class="relative w-64 h-80 perspective-1000">
+            <div class="card-flip absolute w-full h-full" id="card1" onclick="this.classList.toggle('flip')">
+                <div class="card-front absolute w-full h-full bg-blue-500 rounded-lg shadow-lg">
+                    <img src="https://lostplate.com/wp-content/uploads/2020/05/Phnom-Penh-Food-Tour-Independence-Monument.jpg" alt="Card 1" class="w-full h-full object-cover rounded-lg">
+                </div>
+                <div class="card-back absolute w-full h-full  flex flex-col justify-center">
+                    <img src="https://dev-mot-visit-cambodia.kesspay.io/uploads/0000/227/2024/09/05/phnom-penh-city.jpg" alt="Card 1" class="w-full h-full object-cover rounded-lg">
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="relative w-64 h-80 perspective-1000">
+            <div class="card-flip absolute w-full h-full" id="card2" onclick="this.classList.toggle('flip')">
+                <div class="card-front absolute w-full h-full bg-green-500 rounded-lg shadow-lg">
+                    <img src="https://via.placeholder.com/256x320?text=Image+2" alt="Card 2" class="w-full h-full object-cover rounded-lg">
+                </div>
+                <div class="card-back absolute w-full h-full bg-green-700 rounded-lg shadow-lg p-4 text-white flex flex-col justify-center">
+                    <h3 class="text-xl font-bold">Feature Two</h3>
+                    <p class="mt-2">Green-themed card with a crisp animation, perfect for showcasing eco-friendly content.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="relative w-64 h-80 perspective-1000">
+            <div class="card-flip absolute w-full h-full" id="card3" onclick="this.classList.toggle('flip')">
+                <div class="card-front absolute w-full h-full bg-red-500 rounded-lg shadow-lg">
+                    <img src="https://via.placeholder.com/256x320?text=Image+3" alt="Card 3" class="w-full h-full object-cover rounded-lg">
+                </div>
+                <div class="card-back absolute w-full h-full bg-red-700 rounded-lg shadow-lg p-4 text-white flex flex-col justify-center">
+                    <h3 class="text-xl font-bold">Feature Three</h3>
+                    <p class="mt-2">Bold red design with a flipping effect, ideal for attention-grabbing announcements.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="relative w-64 h-80 perspective-1000">
+            <div class="card-flip absolute w-full h-full" id="card4" onclick="this.classList.toggle('flip')">
+                <div class="card-front absolute w-full h-full bg-purple-500 rounded-lg shadow-lg">
+                    <img src="https://via.placeholder.com/256x320?text=Image+4" alt="Card 4" class="w-full h-full object-cover rounded-lg">
+                </div>
+                <div class="card-back absolute w-full h-full bg-purple-700 rounded-lg shadow-lg p-4 text-white flex flex-col justify-center">
+                    <h3 class="text-xl font-bold">Feature Four</h3>
+                    <p class="mt-2">Elegant purple card with a smooth flip, great for creative or artistic content.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="relative w-64 h-80 perspective-1000">
+            <div class="card-flip absolute w-full h-full" id="card5" onclick="this.classList.toggle('flip')">
+                <div class="card-front absolute w-full h-full bg-yellow-500 rounded-lg shadow-lg">
+                    <img src="https://via.placeholder.com/256x320?text=Image+5" alt="Card 5" class="w-full h-full object-cover rounded-lg">
+                </div>
+                <div class="card-back absolute w-full h-full bg-yellow-700 rounded-lg shadow-lg p-4 text-white flex flex-col justify-center">
+                    <h3 class="text-xl font-bold">Feature Five</h3>
+                    <p class="mt-2">Bright yellow card with a fun flip animation, perfect for cheerful messages.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="relative w-64 h-80 perspective-1000">
+            <div class="card-flip absolute w-full h-full" id="card6" onclick="this.classList.toggle('flip')">
+                <div class="card-front absolute w-full h-full bg-pink-500 rounded-lg shadow-lg">
+                    <img src="https://via.placeholder.com/256x320?text=Image+6" alt="Card 6" class="w-full h-full object-cover rounded-lg">
+                </div>
+                <div class="card-back absolute w-full h-full bg-pink-700 rounded-lg shadow-lg p-4 text-white flex flex-col justify-center">
+                    <h3 class="text-xl font-bold">Feature Six</h3>
+                    <p class="mt-2">Playful pink card with a stylish flip, excellent for engaging younger audiences.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
