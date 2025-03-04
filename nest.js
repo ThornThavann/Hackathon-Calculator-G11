@@ -118,29 +118,42 @@
 // }
 // console.log(space + star);
 
-for (let i = 1; i <= 10; i++) {
-  console.log(i);
-}
+// for (let i = 1; i <= 10; i++) {
+//   console.log(i);
+// }
 
-for (let i = 5; i <= 20; i++) {
-  console.log(i);
-}
+// for (let i = 5; i <= 20; i++) {
+//   console.log(i);
+// }
 
-// 2. Sum number from 1 to 5
-let sum = 0;
-for (let i = 1; i <= 5; i++) {
-  sum += i;
-}
-console.log(sum);
+// // 2. Sum number from 1 to 5
+// let sum = 0;
+// for (let i = 1; i <= 5; i++) {
+//   sum += i;
+// }
+// console.log(sum);
 
-// 3. Print number from 5 to 1
-for (let i = 5; i >= 1; i--) {
-  console.log(i);
-}
+// // 3. Print number from 5 to 1
+// for (let i = 5; i >= 1; i--) {
+//   console.log(i);
+// }
 
 
-let fruits = ["Apple", "Banana", "Cherry", "Meng", "Then", "Visal", "Keo", "Sue", "Sal", "Da"];
-for (let i = 0; i < fruits.length; i++) {
-  console.log(fruits[i]);
+// let fruits = ["Apple", "Banana", "Cherry", "Meng", "Then", "Visal", "Keo", "Sue", "Sal", "Da"];
+// for (let i = 0; i < fruits.length; i++) {
+//   console.log(fruits[i]);
+// }
+
+function bigNumber (arr) {
+  let max = arr[0];
+  for (let i = 1; i < arr.length; i++) {
+    if (arr[i] > max) {
+      max = arr[i];
+    }
+  }
+  return max;
 }
+console.log(bigNumber([3, 5, 2, 8, 1, 9, 4, 7, 6]));
+console.log(bigNumber([-1, -5, -2, -8, -1, -9, -4, -7, -6]));
+console.log(bigNumber([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]));
 
