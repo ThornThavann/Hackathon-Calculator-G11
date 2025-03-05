@@ -144,16 +144,68 @@
 //   console.log(fruits[i]);
 // }
 
-function bigNumber (arr) {
-  let max = arr[0];
-  for (let i = 1; i < arr.length; i++) {
-    if (arr[i] > max) {
-      max = arr[i];
-    }
-  }
-  return max;
+// function bigNumber (arr) {
+//   let max = arr[0];
+//   for (let i = 1; i < arr.length; i++) {
+//     if (arr[i] > max) {
+//       max = arr[i];
+//     }
+//   }
+//   return max;
+// }
+// console.log(bigNumber([3, 5, 2, 8, 1, 9, 4, 7, 6]));
+// console.log(bigNumber([-1, -5, -2, -8, -1, -9, -4, -7, -6]));
+// console.log(bigNumber([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]));
+
+// function fibonacci(n){
+//   const fib = [0, 1];
+//   for (let i = 2; i < n; i++) {
+//     fib[i] = fib[i - 1] + fib[i - 2];
+//   }
+//   return fib;
+// }
+// console.log(fibonacci(10));
+
+// function isPrime(n) {
+//   if (n <= 1) {
+//     return false;
+//   }
+//   for (let i = 2; i < n; i++) {
+//     if (n % i === 0) {
+//       return false;
+//     }
+//   }
+//   return true;
+// }
+// console.log(isPrime(1));
+
+// There are two styles to write reverse string function.
+function reverseString(str) {
+  return str.split("").reverse().join("");
 }
-console.log(bigNumber([3, 5, 2, 8, 1, 9, 4, 7, 6]));
-console.log(bigNumber([-1, -5, -2, -8, -1, -9, -4, -7, -6]));
-console.log(bigNumber([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]));
+console.log(reverseString("Hello World"));
+console.log(reverseString("JavaScript"));
+console.log(reverseString("Web Master"));
+console.log(reverseString("Web Development"));
+console.log(reverseString("Web Application Development"));
+
+function reverseString(str) {
+  let reversed = "";
+  for (let i = str.length - 1; i >= 0; i--) {
+    reversed += str[i];
+  }
+  return reversed;
+}
+console.log(reverseString("Hello World"));
+console.log(reverseString("JavaScript"));
+
+let str = "Hello World";
+for (let i = str.length - 1; i >= 0; i--) {
+  console.log(str[i]);
+}
+
+
+
+
+
 
