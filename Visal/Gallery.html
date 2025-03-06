@@ -207,24 +207,28 @@
     </header>
     <div class="flex-1 overflow-hidden">
       <div class="relative h-[447px] sm:h-[1000px]">
-        <img
+        <video
           class="h-full w-full object-cover"
-          src="https://png.pngtree.com/thumb_back/fh260/background/20220612/pngtree-cloud-fog-smoke-white-fog-black-and-white-image_1413039.jpg"
-          alt="header"
-        />
+          src="/video/10260159-hd_1920_1080_30fps.mp4"
+          autoplay
+          muted
+          loop
+        ></video>
         <article
           data-aos="fade-right"
           class="hero absolute top-[30%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 sm:top-[40%] mt-40 sm:left-1/2 sm:transform sm:-translate-x-1/2 sm:-translate-y-1/2"
         >
           <h1
-            class="text-[24px] sm:text-[40px] md:text-[56px]  text-white font-semibold text-center whitespace-nowrap"
+            class="text-[24px] sm:text-[40px] md:text-[56px] text-white font-semibold text-center whitespace-nowrap"
           >
             Chasing the sunshine wherever it goes.
           </h1>
-            <p class="text-center text-white text-[20px] text-sm sm:text-base"> "The weather changes like the tides, unpredictable yet
-              beautiful—rain nourishes the earth, the sun warms our souls, the
-              wind whispers secrets, and storms remind us of nature’s power,
-              while every season paints a new story in the sky." 🌦️🌿</p>
+          <p class="text-center text-white text-[20px] text-sm sm:text-base">
+            "The weather changes like the tides, unpredictable yet
+            beautiful—rain nourishes the earth, the sun warms our souls, the
+            wind whispers secrets, and storms remind us of nature’s power, while
+            every season paints a new story in the sky." 🌦️🌿
+          </p>
         </article>
       </div>
     </div>
@@ -237,13 +241,15 @@
           <p class="text-center text-black mb-4 text-sm sm:text-base">
             "The weather changes like the tides, unpredictable yet
             beautiful—rain nourishes the earth, the sun warms our souls, the
-            wind whispers secrets, and storms remind us of nature’s power,
-            while every season paints a new story in the sky." 🌦️🌿
+            wind whispers secrets, and storms remind us of nature’s power, while
+            every season paints a new story in the sky." 🌦️🌿
           </p>
         </div>
-        </div>
+      </div>
     </article>
-    <main class="bg-white flex items-center mt-10 mb-10 overflow-hidden justify-center p-4">
+    <main
+      class="bg-white flex items-center mt-10 mb-10 overflow-hidden justify-center p-4"
+    >
       <div
         class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl"
       >
@@ -383,11 +389,15 @@
     <!-- Parallax Section -->
     <section class="overflow-hidden">
       <div
-        class="relative bg-fixed w-full h-[622px] sm:h-[464px] flex flex-col items-center justify-center"
-        style="
-          background-image: url(https://t3.ftcdn.net/jpg/06/22/33/36/360_F_622333621_KwEUCiaY27QCk5Bi9ujUcQmuTBY5ljt3.jpg);
-        "
+        class="relative w-full h-[622px] sm:h-[464px] flex flex-col items-center justify-center overflow-hidden"
       >
+        <video
+          class="absolute top-0 left-0 w-full h-full object-cover"
+          src="/video/855947-uhd_3840_2160_30fps.mp4"
+          autoplay
+          muted
+          loop
+        ></video>
         <div
           class="flex flex-col items-center gap-2 justify-evenly absolute h-[80%] w-[80%] top-[10%] sm:w-[96%] sm:right-[2%] sm:left-[2%] bg-black opacity-50 rounded-xl"
         >
@@ -404,24 +414,24 @@
         </div>
       </div>
     </section>
-   <article class="overflow-hidden">
-    <div class="flex flex-col items-center mt-[50px] justify-center bg-white">
-      <div class="w-full max-w-screen-lg px-4">
-        <h1 class="text-center text-4xl sm:text-6xl p-3 font-bold mb-2">
-          RECENT WEATHER
-        </h1>
-        <p class="text-center text-gray-600 mb-4 text-sm sm:text-base">
-          In Phnom Penh, the early March sun blazes with temperatures soaring
-          to 36°C, while the air carries a 71% humidity, making each day a
-          testament to the tropical vibrancy of Cambodia.
-        </p>
+    <article class="overflow-hidden">
+      <div class="flex flex-col items-center mt-[50px] justify-center bg-white">
+        <div class="w-full max-w-screen-lg px-4">
+          <h1 class="text-center text-4xl sm:text-6xl p-3 font-bold mb-2">
+            RECENT WEATHER
+          </h1>
+          <p class="text-center text-gray-600 mb-4 text-sm sm:text-base">
+            In Phnom Penh, the early March sun blazes with temperatures soaring
+            to 36°C, while the air carries a 71% humidity, making each day a
+            testament to the tropical vibrancy of Cambodia.
+          </p>
+        </div>
+        <div
+          id="weather-container"
+          class="flex flex-wrap justify-center mt-10 px-4 gap-6 w-full max-w-screen-lg"
+        ></div>
       </div>
-      <div
-        id="weather-container"
-        class="flex flex-wrap justify-center mt-10 px-4 gap-6 w-full max-w-screen-lg"
-      ></div>
-    </div>
-   </article>
+    </article>
     <footer class="bg-black text-white mt-10 py-10 text-center flex-shrink-0">
       <div class="container mx-auto px-4">
         <h2

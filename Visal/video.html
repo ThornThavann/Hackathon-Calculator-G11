@@ -1,5 +1,59 @@
-<div class="mt-2">
-    <video class="w-full h-auto max-h-[700px] object-cover" autoplay muted loop playsinline controls style="pointer-events: none;">
-    <source src="/video/about video.mp4" type="video/mp4" />
-    </video>
-  </div>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="mt-2">
+      <video
+        class="w-full h-auto max-h-[700px] object-cover"
+        autoplay
+        muted
+        loop
+        playsinline
+        controls
+        style="pointer-events: none"
+      >
+        <source src="/video/about video.mp4" type="video/mp4" />
+      </video>
+    </div>
+
+    <video
+      class="h-full w-full object-cover"
+      src="/video/3842236-hd_1920_1080_24fps.mp4"
+      autoplay
+      muted
+      loop
+    ></video>
+
+    <section class="overflow-hidden">
+      <div
+        class="relative w-full h-[622px] sm:h-[464px] flex flex-col items-center justify-center overflow-hidden"
+      >
+        <video
+          class="absolute top-0 left-0 w-full h-full object-cover"
+          src="/video/855947-uhd_3840_2160_30fps.mp4"
+          autoplay
+          muted
+          loop
+        ></video>
+        <div
+          class="flex flex-col items-center gap-2 justify-evenly absolute h-[80%] w-[80%] top-[10%] sm:w-[96%] sm:right-[2%] sm:left-[2%] bg-black opacity-50 rounded-xl"
+        >
+          <h3 class="text-white text-xl sm:text-[26px] text-center font-light">
+            "The sky speaks in whispers of the wind, roars with thunder, weeps
+            with rain, and smiles with sunshine—each moment a masterpiece of
+            nature’s endless rhythm." ☁️⚡🌞
+          </h3>
+          <a
+            class="cursor-pointer text-white text-center border p-2 rounded-3xl border-white text-sm sm:text-[14px] hover:text-green-700 hover:bg-white"
+          >
+            Get a free quote
+          </a>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
