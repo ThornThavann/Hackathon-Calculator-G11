@@ -6,8 +6,33 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Responsive Two-Column FAQ with Tailwind</title>
   </head>
-  <body class="min-h-screen flex flex-col">
-    <main class="flex-1">
+  <body>
+   
+
+    <div class="flex-1 overflow-hidden">
+      <div class="relative h-[447px] sm:h-[1000px]">
+        <img
+          class="h-full w-full object-cover"
+          src="https://tourscanner.com/blog/wp-content/uploads/2022/06/things-to-do-in-Phnom-Penh-Cambodia.jpg"
+          alt="header"
+        />
+        <!-- <article
+          data-aos="fade-right"
+          class="hero absolute top-[30%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 sm:top-[40%] mt-40 sm:left-1/2 sm:transform sm:-translate-x-1/2 sm:-translate-y-1/2"
+        >
+          <h1
+            class="text-[24px] sm:text-[40px] md:text-[56px]  text-white font-semibold text-center whitespace-nowrap"
+          >
+            Chasing the sunshine wherever it goes.
+          </h1>
+            <p class="text-center text-white text-[20px] text-sm sm:text-base"> "The weather changes like the tides, unpredictable yet
+              beautiful—rain nourishes the earth, the sun warms our souls, the
+              wind whispers secrets, and storms remind us of nature’s power,
+              while every season paints a new story in the sky." 🌦️🌿</p>
+        </article> -->
+      </div>
+    </div>
+    <main>
       <section>
         <div class="p-8 bg-white rounded shadow">
           <div class="flex flex-col sm:flex-row justify-between items-center mb-6">
@@ -17,42 +42,42 @@
           <ul id="faqList">
               <li class="mb-4">
                   <button class="w-full text-left p-4 bg-gray-100 rounded-t shadow hover:bg-gray-200" onclick="toggleFAQ(this)">
-                      1. <span class="question">Why is a building called a 'building' if it's already built?</span>
+                      1. <span class="question">What features does my weather website in Phnom Penh offer?</span>
                   </button>
                   <div class="p-4 bg-white border rounded-b shadow-inner hidden">
-                      <div class="answer">Great question! It's called a building because language is strange and full of mysteries. Much like the chicken or the egg dilemma, this one might keep you up at night!</div>
+                      <div class="answer">Your Phnom Penh weather website offers detailed forecasts, humidity levels, wind speed, precipitation chances, and temperature trends, making it a comprehensive tool for local weather updates.</div>
                   </div>
               </li>
               <li class="mb-4">
                   <button class="w-full text-left p-4 bg-gray-100 rounded-t shadow hover:bg-gray-200" onclick="toggleFAQ(this)">
-                      2. <span class="question">If a word is misspelled in the dictionary, how would we ever know?</span>
+                      2. <span class="question">How accurate is the forecast on my Phnom Penh site?</span>
                   </button>
                   <div class="p-4 bg-white border rounded-b shadow-inner hidden">
-                      <div class="answer">That's a conundrum! We'd probably just keep spelling it wrong until someone smarter than us noticed.</div>
+                      <div class="answer">The forecast on your Phnom Penh site is highly accurate, relying on real-time data, advanced models, and frequent updates to ensure users receive reliable weather predictions daily.</div>
                   </div>
               </li>
               <li class="mb-4">
                   <button class="w-full text-left p-4 bg-gray-100 rounded-t shadow hover:bg-gray-200" onclick="toggleFAQ(this)">
-                      3. <span class="question">Why do we press harder on the remote control buttons when we know the batteries are dead?</span>
+                      3. <span class="question">Can users get hourly updates on my Phnom Penh website?</span>
                   </button>
                   <div class="p-4 bg-white border rounded-b shadow-inner hidden">
-                      <div class="answer">It's the universal sign of hope and frustration combined. Also, we secretly believe that our sheer willpower can charge batteries.</div>
+                      <div class="answer">Yes, users can access hourly weather updates on your Phnom Penh website, providing precise, up-to-the-minute details for planning activities throughout the day with confidence.</div>
                   </div>
               </li>
               <li class="mb-4">
                   <button class="w-full text-left p-4 bg-gray-100 rounded-t shadow hover:bg-gray-200" onclick="toggleFAQ(this)">
-                      4. <span class="question">Can a kangaroo jump higher than a house?</span>
+                      4. <span class="question">Does your weather website provide historical weather data?</span>
                   </button>
                   <div class="p-4 bg-white border rounded-b shadow-inner hidden">
-                      <div class="answer">Absolutely! Houses can't jump, but kangaroos can jump really high. So, kangaroos win this one by default.</div>
+                      <div class="answer">Yes, we offer a historical weather archive where users can look up past weather conditions by date and location. Whether you’re curious about last year’s rainfall or the temperature on a specific holiday, our database has you covered.</div>
                   </div>
               </li>
               <li class="mb-4">
                   <button class="w-full text-left p-4 bg-gray-100 rounded-t shadow hover:bg-gray-200" onclick="toggleFAQ(this)">
-                      5. <span class="question">Why do we call it 'after dark' when it's really 'after light'?</span>
+                      5. <span class="question">How can I contribute to your weather website?</span>
                   </button>
                   <div class="p-4 bg-white border rounded-b shadow-inner hidden">
-                      <div class="answer">Because humans like to make things confusing. It's a tradition!</div>
+                      <div class="answer">We love community input! Users can submit local weather observations, like photos of current conditions or reports of unique events, through our "Weather Spotter" feature. Your contributions help us enhance real-time updates for everyone.</div>
                   </div>
               </li>
           </ul>
