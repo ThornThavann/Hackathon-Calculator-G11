@@ -180,31 +180,43 @@
 // console.log(isPrime(1));
 
 // There are two styles to write reverse string function.
-function reverseString(str) {
-  return str.split("").reverse().join("");
+// function reverseString(str) {
+//   return str.split("").reverse().join("");
+// }
+// console.log(reverseString("Hello World"));
+// console.log(reverseString("JavaScript"));
+// console.log(reverseString("Web Master"));
+// console.log(reverseString("Web Development"));
+// console.log(reverseString("Web Application Development"));
+
+// function reverseString(str) {
+//   let reversed = "";
+//   for (let i = str.length - 1; i >= 0; i--) {
+//     reversed += str[i];
+//   }
+//   return reversed;
+// }
+// console.log(reverseString("Hello World"));
+// console.log(reverseString("JavaScript"));
+
+// let str = "Hello World";
+// for (let i = str.length - 1; i >= 0; i--) {
+//   console.log(str[i]);
+// }
+
+// const array = [3, 5, 7, 12, 50,];
+// let sum = 0;
+// for (let i = 0; i < array.length; i++) {
+//   sum += array[i];
+// }
+// console.log(sum);
+
+const array = [50, 12, 7, 5, 3];
+let reversed = [];
+for (let i = array.length - 1; i >= 0; i--) {
+  reversed.push(array[i]);
 }
-console.log(reverseString("Hello World"));
-console.log(reverseString("JavaScript"));
-console.log(reverseString("Web Master"));
-console.log(reverseString("Web Development"));
-console.log(reverseString("Web Application Development"));
-
-function reverseString(str) {
-  let reversed = "";
-  for (let i = str.length - 1; i >= 0; i--) {
-    reversed += str[i];
-  }
-  return reversed;
-}
-console.log(reverseString("Hello World"));
-console.log(reverseString("JavaScript"));
-
-let str = "Hello World";
-for (let i = str.length - 1; i >= 0; i--) {
-  console.log(str[i]);
-}
-
-
+console.log(reversed);
 
 
 
