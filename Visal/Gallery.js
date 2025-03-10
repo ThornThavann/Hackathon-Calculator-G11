@@ -26,9 +26,13 @@ async function fetchWeather(city) {
       `https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${API_KEY}&units=metric`
     );
 
-    if (!response.ok) throw new Error("Failed to fetch weather data");
+    if (!response.ok) throw new Error(`Failed to fetch weather data: ${response.statusText}`);
 
     const data = await response.json();
+    
+    // Log the fetched data for debugging
+    console.log("Fetched Weather Data: ", data);
+    
     return data.list;
   } catch (error) {
     console.error("Error fetching weather data:", error);
@@ -79,6 +83,9 @@ async function updateWeather() {
     }
     if (dailyForecasts.length === 5) break;
   }
+
+  // Log the daily forecasts data for debugging
+  console.log("Daily Forecasts: ", dailyForecasts);
 
   // Display actual weather data
   dailyForecasts.forEach((weatherData, index) => {
@@ -147,7 +154,7 @@ style.innerHTML = `
 `;
 document.head.appendChild(style);
 
-// Call function on window load
-window.onload = updateWeather;
-
-
+// Call function when the DOM content is fully loaded
+window.addEventListener('DOMContentLoaded', () => {
+  updateWeather();
+});
